@@ -1,0 +1,196 @@
+/*Un sélecteur de style pour tous les titres de niveau h1*/
+.color1 {color: #140f07;}
+.color2 {color: #152c58;}
+.color3 {color: #4b60b6;}
+.color4 {color: #979dfb;}
+.color5 {color: #fde4f6;}
+
+.theme-light {
+    --fond-page: #e2e2ab;
+    --titre: #1f1e22;
+    --fond-menu: #d9c27d;
+    --fond-texte-bloc-info: #c38652;
+    --texte-titre-bloc-info: #1f1e22;
+    --bordure: #d1b1b1;
+    --texte-bloc-info: #464d39;
+    --lien-menu: #464d39;
+    --lien: #464d39;
+    --fond_bout:#c38652;
+}
+
+.theme-dark {
+
+    --fond-page: #140f07;
+    --titre: #4b60b6;
+    --fond-menu: #152c58;
+    --fond-texte-bloc-info: #08152d;
+    --texte-titre-bloc-info: #3959d7;
+    --titre-page:#152c58; 
+    --bordure: #979dfb;
+    --texte-bloc-info: #979dfb;;;
+    --lien-menu: #fde4f6;
+    --lien: #979dfb;;
+    --fond_bout:#152c58;;
+}
+
+a:visited {
+    color: var(--lien)
+}
+
+a:link {
+    color: var(--lien)
+}
+
+#menu a:visited {
+    color: var(--lien-menu)
+}
+
+#menu a:link {
+    color: var(--lien-menu)
+}
+
+h1 {
+    font-size: 30px;
+    background-color: var(--fond-page);
+    color: var(--titre);
+    text-align: center;
+    border: thin solid var(--bordure);
+    padding: 10px;
+
+}
+
+#bout_montre_menu {
+    display: none;
+}
+
+.lienmu {
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+#menu_et_contenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contenu {
+    float: left;
+    width: 70%;
+    margin-left: 10px;
+}
+
+#titre_site{
+    font-size: 40px;
+    border: 1px solid rgb(103, 103, 247);
+    
+}
+
+#menu {
+    border: 2px solid var(--bordure);
+    float: left;
+    width: 15%;
+    background-color: var(--fond-menu);
+    margin-right: 40px;
+}
+
+#hé {
+    color: var(--texte-titre-bloc-info)
+}
+
+.case-tableau-piece {
+    border: 2px dotted var(--bordure)
+}
+
+.titrepage {
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: monospace;
+    text-transform: lowercase;
+    color: var(--titre-page);
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+.blocinfo_titre {
+    width: 100%;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--texte-titre-bloc-info);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.blocinfo_text {
+    width: 100%;
+    padding: 8px;
+    border: thin solid var(--bordure);
+    background-color: var(--fond-texte-bloc-info);
+    color: var(--texte-bloc-info);
+    float: left;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: var(--fond-page);
+}
+
+
+.échiquier {
+    float: left;
+    text-align: left;
+    padding: 8px;
+}
+
+.fondiv {
+    border: thin solid var(--bordure);
+    padding: 10px;
+    background-color: var(--fond-texte-bloc-info);
+    color: var(--texte-bloc-info);
+}
+
+.piece {
+    float: left;
+    text-align: left;
+}
+
+#tableau_piece {
+    float: left;
+    margin-right: 20px;
+}
+
+.case-tableau-piece {
+    border: 2px solid var(--bordure);
+    padding: 10px;
+    background-color: var(--fond-texte-bloc-info);
+    text-align: center;
+}
+
+#bout_montre_menu{
+    font-size: 20px;
+    background-color: var(--texte-titre-bloc-info);
+}
+
+#bout_cache_menu{
+    font-size: 20px;
+    background-color: var(--texte-titre-bloc-info);
+}
+
+#change_theme{
+    background-color: var(--fond_bout);
+}
+
+#video_echecs {
+    margin-left: 28px;
+}
+
+#lien_chess{
+    color: var(--lien-menu)
+}
+
